@@ -1,0 +1,46 @@
+
+.crypto-table {
+    border-collapse: collapse;
+    margin: 2rem auto 0;
+    max-width: 850px;
+    min-width: 600px;
+    width: 100%;
+    table-layout: fixed;
+    color: var(--color-foreground);
+    overflow: auto;
+  }
+  
+  .crypto-row {
+      padding: 5px;
+  }
+
+  .crypto-row:nth-child(2n) {
+    background-color: var(--color-background-accent);
+    border-radius: var(--border-radius-3);
+  }
+  
+  .crypto-header-cell,
+  .crypto-table-cell {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .crypto-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .crypto-icons  {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+ .crypto-table thead {
+      background-color: var(--color-primary-accent);
+}
+  
+  .crypto-header-cell {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
