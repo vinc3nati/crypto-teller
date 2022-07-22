@@ -38,13 +38,16 @@ export const CryptoTable = ({ cryptoData }) => {
                 <div className="crypto-box">
                   <MdArrowDropDown className="crypto-icons" />{" "}
                   <span>
-                    {String(item.quote.USD.percent_change_30d).slice(1)} %
+                    {Number(
+                      String(item.quote.USD.percent_change_30d).slice(1)
+                    ).toFixed(2)}{" "}
+                    %
                   </span>
                 </div>
               ) : (
                 <div className="crypto-box">
                   <MdArrowDropUp className="crypto-icons" />
-                  <span>{item.quote.USD.percent_change_30d} %</span>
+                  <span>{item.quote.USD.percent_change_30d.toFixed(2)} %</span>
                 </div>
               )}
             </td>
